@@ -1,0 +1,15 @@
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\bin\Debug\net6.0\Ecommerce.Db.deps.json
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\bin\Debug\net6.0\Ecommerce.Db.dll
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\bin\Debug\net6.0\Ecommerce.Db.pdb
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\bin\Debug\net6.0\Ecommerce.Domain.dll
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\bin\Debug\net6.0\Ecommerce.Domain.pdb
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\obj\Debug\net6.0\Ecommerce.Db.csproj.AssemblyReference.cache
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\obj\Debug\net6.0\Ecommerce.Db.GeneratedMSBuildEditorConfig.editorconfig
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\obj\Debug\net6.0\Ecommerce.Db.AssemblyInfoInputs.cache
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\obj\Debug\net6.0\Ecommerce.Db.AssemblyInfo.cs
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\obj\Debug\net6.0\Ecommerce.Db.csproj.CoreCompileInputs.cache
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\obj\Debug\net6.0\Ecommerce.Db.csproj.CopyComplete
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\obj\Debug\net6.0\Ecommerce.Db.dll
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\obj\Debug\net6.0\refint\Ecommerce.Db.dll
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\obj\Debug\net6.0\Ecommerce.Db.pdb
+D:\PracticeCode\Ecommerce\src\Ecommerce.Db\obj\Debug\net6.0\ref\Ecommerce.Db.dll
