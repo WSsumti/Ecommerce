@@ -1,16 +1,7 @@
-﻿using Microsoft.Extensions.Hosting;
-using Serilog;
-using Serilog.Events;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Configuration;
-using Ecommerce.Db.Data;
-using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace Ecommerce.DbMigrator
 {
@@ -19,6 +10,7 @@ namespace Ecommerce.DbMigrator
         static async Task Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Information()
                 .Enrich.FromLogContext()
                 .WriteTo.Console()
                 .CreateLogger();
@@ -27,12 +19,9 @@ namespace Ecommerce.DbMigrator
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureLogging((logging) => logging.ClearProviders())
-                .ConfigureServices((context,services) =>
+                .ConfigureServices((context, services) =>
                 {
-                    //services.AddHostedService<DbMigratorHostService>();
-                    services.AddLogging(c => c.AddSerilog());
-                    services.AddDbContext<EcommerceDbContext>(o => o.UseNpgsql(context.Configuration.GetConnectionString("Default")));
-                    services.AddSingleton<EcommerceDbContextFactory>(new EcommerceDbContextFactory(context.Configuration.GetConnectionString("Default")));                    
+                    services.AddHostedService<DbMigratorHostService>();
                 });
     }
 }

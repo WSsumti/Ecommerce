@@ -36,6 +36,9 @@
             "projectReferences": {
               "D:\\PracticeCode\\Ecommerce\\src\\Ecommerce.Db\\Ecommerce.Db.csproj": {
                 "projectPath": "D:\\PracticeCode\\Ecommerce\\src\\Ecommerce.Db\\Ecommerce.Db.csproj"
+              },
+              "D:\\PracticeCode\\Ecommerce\\src\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {
+                "projectPath": "D:\\PracticeCode\\Ecommerce\\src\\Ecommerce.Domain\\Ecommerce.Domain.csproj"
               }
             }
           }
@@ -57,6 +60,14 @@
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Volo.Abp": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            },
+            "Volo.Abp.Core": {
+              "target": "Package",
+              "version": "[5.3.3, )"
             }
           },
           "imports": [
@@ -193,6 +204,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Volo.Abp.Core": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
